@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img class="logo" src="./assets/CARS-f5815e19.png" alt="">
+                <ul class="nav__links">
+                    <li><a href="#" class="nav__link">Home</a></li>
+                    <li><a href="#" class="nav__link">Contact</a></li>
+                    <li><a href="#" class="nav__link nav__link--primary">Cars</a></li>
+                </ul>
+
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Cars</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>Croatia's most awarded online car platform</h1>
+                    <h2>Find your dream car with <span class="purple">CarSite</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse Cars</button>
+                    </a>
+                </div>
+                <figure class="header__img--wrapper">
+                    <img src="./assets/undraw_electric_car_b-7-hl.svg" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+    <main>
+        <section id="highlights">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Why Choose <span class="purple">CarSite?</span>
+                    </h2>
+                    <div class="highlight__wrapper">
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Easy and Quick
+                            </h3>
+                            <p class="highlight__para">
+                                Get access to the car you purchase online.
+                            </p>
+
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                10,000+ Cars
+                            </h3>
+                            <p class="highlight__para">
+                                CarSite has cars in all your favourite categories.
+                            </p>
+
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Affordable
+                            </h3>
+                            <p class="highlight__para">
+                                Get your first key on a new car.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="purple">Cars</span>
+                    </h2>
+                    <div class="cars">
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img"
+                                    src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                    src alt="">
+                            </figure>
+                            <div class="car__title">
+                                Mercedes GTR
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                <span class="car__price--normal">$9999.9</span> $4999.95
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img"
+                                    src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?cs=srgb&dl=pexels-pixabay-210019.jpg&fm=jpg"
+                                    src alt="">
+                            </figure>
+                            <div class="car__title">
+                                Lotus Elise
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                <span class="car__price--normal">$9999.9</span> $4999.95
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img"
+                                    src="https://media.istockphoto.com/id/1157655660/photo/generic-red-suv-on-a-white-background-side-view.jpg?s=612x612&w=0&k=20&c=ecrvXZhimUHnYES-kx7L5b-TDtRU5kAFPpNm0ZtAp1Y="
+                                    src alt="">
+                            </figure>
+                            <div class="car__title">
+                                MG ZS
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                <span class="car__price--normal">$9999.9</span> $4999.95
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img"
+                                    src="https://images.unsplash.com/photo-1501066927591-314112b5888e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src alt="">
+                            </figure>
+                            <div class="car__title">
+                                MERCEDES GT
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                <span class="car__price--normal">$9999.9</span> $4999.95
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="Latest">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Latest <span class="purple">Cars</span>
+                    </h2>
+                    <div class="cars__latest">
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img"
+                                    src="data:image/jpeg;base64,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"
+                                    src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img" src="https://thumbs.dreamstime.com/b/bmw-f-series-gt-berlin-germany-august-modern-red-car-city-street-57323205.jpg" src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img" src="https://imgd.aeplcdn.com/370x208/n/cw/ec/40432/scorpio-n-exterior-right-front-three-quarter-75.jpeg?isig=0&q=80" src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShHXU_0T517WT5V_iAzjj3XrQ5wq4mNv1VZCDDDQz06dfOTv7YspVdL96v7lOR7wz7_Bc&usqp=CAU" src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8YdecMeEhw-qV9zl03pqnyn2bYafkodh1wg&usqp=CAU" src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7XDpbO8AVeVd6jQmC5KCFDeSbS6vNLPbvWA&usqp=CAU" src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img" src="https://img.gaadicdn.com/images/car-images/360x240/Maruti/FRONX/9243/1673943242248/227_earthen-brown-with-black_3f2c25.jpg" src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                        <div class="car">
+                            <figure class="car__img--wrapper">
+                                <img class="car__img" src="https://media.istockphoto.com/id/509643523/photo/bmw-i8-at-the-press-launch.jpg?s=612x612&w=0&k=20&c=MXcH3gqSDx62Wrbu4lVUnrdNEjdJXx-NPbxhMeSSpQw=" src alt="">
+                            </figure>
+                            <div class="car__title">
+                                BMW 
+                            </div>
+                            <div class="car__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="car__price">
+                                $9999.9
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="explore">
+            <div class="container">
+                <div class="row row__column">
+                    <h2>Explore more <span class="purple">Cars</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse Cars</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container explore">
+            <div class="row row__column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="./assets/CARS-f5815e19.png" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link">Cars</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2024 CarSite</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
